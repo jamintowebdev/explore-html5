@@ -1,16 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Form</title>
 </head>
+
 <body>
     <h1>We are exploring form now!</h1>
-    
-    <form action="">
+    <h2>A form for a Pitha Company</h2>
 
+    <form action="">
+        <p>Name: <input type="text" name="name" placeholder="Enter your name" id=""></p>
+        <p>Email: <input type="text" name="email" placeholder="Enter your email" id=""></p>
+        <fieldset>
+            <legend>Select Your Cake!</legend>
+            <p>
+                <label for="chitoy">
+                    <input type="radio" name="pitha" id="chitoy">Chitoy
+                </label>
+            </p>
+            <p>
+                <label for="vapa">
+                    <input type="radio" name="pitha" id="vapa">vapa
+                </label>
+            </p>
+            <p>
+                <label for="teller pitha">
+                    <input type="radio" name="pitha" id="teller pitha">teller pitha
+                </label>
+            </p>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Select Your Vorta</legend>
+            <!-- p*3>label>input:checkbox -->
+            <p><label for="sorisha"><input type="checkbox" name="vorta" id="sorisha">sorisha</label></p>
+            <p><label for="shutki"><input type="checkbox" name="vorta" id="shutki">shutki</label></p>
+            <p><label for="begun"><input type="checkbox" name="vorta" id="begun">begun</label></p>
+        </fieldset>
+
+        <p>Special Instructions:
+            <br> <br>
+            <textarea name="instructions" id="" cols="30" rows="10">share your opinion....</textarea>
+        </p>
+        <button type="submit">submit</button>
+        <button type="reset">Reset</button>
     </form>
 </body>
+
 </html>
